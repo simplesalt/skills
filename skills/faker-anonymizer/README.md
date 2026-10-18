@@ -110,4 +110,4 @@ template inserts one row at a time, so it's slow on big tables.
 [PolyForm Noncommercial 1.0.0](LICENSE). Free for noncommercial use. If you
 pass on any part of it, including inside another project, keep the license
 and its `Required Notice` line with it. For commercial use, contact
-simplesalt.
+Simple Salt.

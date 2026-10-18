@@ -1,10 +1,10 @@
 {
   "name": "simplesalt",
   "owner": {
-    "name": "simplesalt"
+    "name": "Simple Salt"
   },
   "metadata": {
-    "description": "Agent Skills and a comment-stripping commit hook from simplesalt."
+    "description": "Agent Skills and a comment-stripping commit hook from Simple Salt."
   },
   "plugins": [
     {

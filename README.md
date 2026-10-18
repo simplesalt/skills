@@ -1,4 +1,4 @@
-# simplesalt skills
+# Simple Salt skills
 
 [Agent Skills](https://agentskills.io) and a Claude Code hook for coding
 agents.
@@ -30,4 +30,4 @@ Code, `.claude/skills/` in a repo or `~/.claude/skills/`), with its `LICENSE`.
 [PolyForm Noncommercial 1.0.0](LICENSE). Free for noncommercial use. If you
 pass on any part of this repo, including inside another project, keep the
 license and its `Required Notice` line with it. For commercial use, contact
-simplesalt.
+Simple Salt.

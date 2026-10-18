@@ -2,7 +2,9 @@
   "name": "strip-comments",
   "version": "1.0.0",
   "description": "Strips comments from the lines an agent stages for commit, and keeps untagged markdown out of the commit, then tells the agent what it did.",
-  "author": { "name": "simplesalt" },
+  "author": {
+    "name": "Simple Salt"
+  },
   "repository": "https://github.com/simplesalt/skills",
   "license": "PolyForm-Noncommercial-1.0.0"
 }
