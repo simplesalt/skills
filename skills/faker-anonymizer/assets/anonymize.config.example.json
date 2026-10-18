@@ -1,0 +1,37 @@
+{
+  "locale": "en_US",
+  "tables": {
+    "customers": {
+      "entity": "person",
+      "identity": ["full_name", "email"],
+      "fields": {
+        "full_name":  {"pii": "name",           "analytics": true},
+        "email":      {"pii": "email",          "analytics": true},
+        "phone":      {"pii": "phone",          "analytics": false},
+        "street":     {"pii": "street_address", "analytics": true},
+        "city":       {"pii": "city",           "analytics": true},
+        "state":      {"pii": "state",          "analytics": true},
+        "zip":        {"pii": "zip",            "analytics": true},
+        "birth_date": {"pii": "date_of_birth",  "analytics": true}
+      },
+      "keep": ["customer_id", "plan", "signup_date"],
+      "drop": ["notes"]
+    },
+    "orders": {
+      "lookups": {
+        "customer_id": {
+          "references": "customers.customer_id",
+          "copy": {"ship_name": "full_name", "ship_street": "street"}
+        }
+      },
+      "keep": ["order_id", "amount", "created_at"]
+    },
+    "newsletter": {
+      "lookups": {
+        "email": {"references": "customers.email"}
+      },
+      "keep": ["subscribed_at"]
+    }
+  },
+  "drop_tables": ["user_logins", "app_settings"]
+}

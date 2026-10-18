@@ -1,0 +1,5 @@
+# Pin Faker exactly: a different version can turn the same seed into different fakes.
+Faker==40.43.0
+# Only the driver you use:
+# psycopg[binary]>=3.2    # PostgreSQL
+# PyMySQL>=1.1            # MySQL
