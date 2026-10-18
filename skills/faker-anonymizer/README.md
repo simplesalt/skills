@@ -71,7 +71,7 @@ expect more than one cleansing pass.
 ```
 faker-anonymizer/
   SKILL.md                         the agent's instructions
-  LICENSE.md                       PolyForm Noncommercial 1.0.0
+  LICENSE                          PolyForm Noncommercial 1.0.0
   references/pii-field-names.md    name patterns that suggest PII
   assets/anonymize.config.example.json
   templates/python/                anonymize.py, requirements.txt (sqlite3, psycopg, PyMySQL)
@@ -81,7 +81,7 @@ faker-anonymizer/
 
 Install the `faker-anonymizer/` folder where your agent loads skills (for
 Claude Code, `.claude/skills/` in the repo or `~/.claude/skills/`). Keep
-`LICENSE.md` with it.
+`LICENSE` with it.
 
 ## Test
 
@@ -107,7 +107,7 @@ template inserts one row at a time, so it's slow on big tables.
 
 ## License
 
-[PolyForm Noncommercial 1.0.0](LICENSE.md). Free for noncommercial use. If you
+[PolyForm Noncommercial 1.0.0](LICENSE). Free for noncommercial use. If you
 pass on any part of it, including inside another project, keep the license
 and its `Required Notice` line with it. For commercial use, contact
 simplesalt.

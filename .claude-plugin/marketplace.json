@@ -1,0 +1,23 @@
+{
+  "name": "simplesalt",
+  "owner": {
+    "name": "simplesalt"
+  },
+  "metadata": {
+    "description": "Agent Skills and a comment-stripping commit hook from simplesalt."
+  },
+  "plugins": [
+    {
+      "name": "simplesalt-skills",
+      "source": ".",
+      "description": "Agent Skills: faker-anonymizer, clarify.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "strip-comments",
+      "source": "./plugins/strip-comments",
+      "description": "Pre-commit hook that strips comments from staged code and keeps untagged markdown out of commits.",
+      "version": "1.0.0"
+    }
+  ]
+}

@@ -1,11 +1,13 @@
 ---
 name: faker-anonymizer
 description: Build a script that copies a relational SQL database into a descoped analytics copy with the same schema, replacing PII with Faker values that stay consistent for analytics, without ever reading the data. Use when someone wants an anonymized, masked or fake copy of a PostgreSQL, MySQL or SQLite database for analysts, testing, demos or AI agents.
-license: PolyForm-Noncommercial-1.0.0 (see LICENSE.md)
+license: PolyForm-Noncommercial-1.0.0 (see LICENSE)
 compatibility: Python 3.10+ with Faker, or Node 22.5+ with @faker-js/faker. SQLite works out of the box; PostgreSQL and MySQL need their standard driver.
 metadata:
   version: "0.3.0"
 ---
+
+<!-- agent-prompt -->
 
 # Faker anonymizer
 

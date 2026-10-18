@@ -1,3 +1,5 @@
+<!-- agent-prompt -->
+
 # Field names that suggest PII
 
 Match case-insensitively, on whole words or parts (`cust_email`, `EmailAddr`,
