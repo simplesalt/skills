@@ -10,7 +10,7 @@
     {
       "name": "simplesalt-skills",
       "source": ".",
-      "description": "Agent Skills: faker-anonymizer, clarify.",
+      "description": "Agent Skills: faker-anonymizer, clarify, secrets-handling.",
       "version": "1.0.0"
     },
     {

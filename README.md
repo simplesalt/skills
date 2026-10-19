@@ -18,6 +18,7 @@ Code, `.claude/skills/` in a repo or `~/.claude/skills/`), with its `LICENSE`.
 |---|---|
 | [faker-anonymizer](skills/faker-anonymizer/) | Has the agent build a script that copies a relational SQL database into an anonymized analytics copy with the same schema, replacing PII with Faker values that stay consistent for analysis, without ever reading the data. |
 | [clarify](skills/clarify/) | Turns a vague idea into a clear one through a Socratic dialogue: the agent asks questions, reflects back, and keeps a record of what's settled and what's still open. |
+| [secrets-handling](skills/secrets-handling/) | Rules for where secrets come from, where they may be stored, what a secret holds, and how people fill them without leaving a trace, with a Kubernetes and Flux example. |
 
 ## Hooks
 
