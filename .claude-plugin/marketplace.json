@@ -10,7 +10,7 @@
     {
       "name": "simplesalt-skills",
       "source": ".",
-      "description": "Agent Skills: safe-snap, socratic-sharpen, safe-secrets.",
+      "description": "Agent Skills: safe-snap, socratic-sharpen, stupidproof-secrets.",
       "version": "1.0.0"
     },
     {
