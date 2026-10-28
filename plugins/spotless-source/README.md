@@ -1,4 +1,4 @@
-# strip-comments
+# spotless-source
 
 A Claude Code hook that keeps code free of commentary. Code should contain only
 executable instructions; explanations belong in READMEs and in prompts written
@@ -11,7 +11,8 @@ Before every Bash command that contains `git commit`, it:
   YAML `run:` blocks and heredocs. It rewrites the staged copy only: the
   working tree keeps its comments, so `git status` shows a diff afterwards. A
   file is left alone if stripping would make it fail to parse, and a line
-  containing `strip-comments:keep` is never touched. Shebangs stay.
+  containing `spotless-source:keep` (or the older `strip-comments:keep`) is
+  never touched. Shebangs stay.
 - **Keeps untagged markdown out of the commit.** A `.md` file is committed only
   if it is a `README.md` or has a line `<!-- agent-prompt -->` near the top,
   after any frontmatter. Other markdown files are unstaged and stay in the
@@ -26,7 +27,7 @@ It never blocks a commit. If it fails, the commit goes ahead with its comments.
 
 ```
 /plugin marketplace add simplesalt/skills
-/plugin install strip-comments@simplesalt
+/plugin install spotless-source@simplesalt
 ```
 
 Needs `python3` and `git` on the PATH, and Pygments (`pip install pygments`).
@@ -42,8 +43,8 @@ way in the first place:
 ## Run it by hand
 
 ```
-python3 scripts/strip-comments-precommit.py --report   # print a patch of what would change
-python3 scripts/strip-comments-precommit.py --full     # strip every tracked file in the working tree
+python3 scripts/spotless-source-precommit.py --report   # print a patch of what would change
+python3 scripts/spotless-source-precommit.py --full     # strip every tracked file in the working tree
 ```
 
 ## License

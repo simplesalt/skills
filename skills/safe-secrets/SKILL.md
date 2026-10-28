@@ -1,5 +1,5 @@
 ---
-name: secrets-handling
+name: safe-secrets
 description: rules for coding agents to safely handle secrets. Use whenever you write or review application or infrastructure code, including manifests, automation, or any other code that touches credentials, connection strings, endpoints, account IDs, or keys, or when someone asks how to add, fill or rotate a secret.
 license: PolyForm-Noncommercial-1.0.0 (see LICENSE)
 metadata:
@@ -8,7 +8,7 @@ metadata:
 
 <!-- agent-prompt -->
 
-# Secrets handling
+# Safe secrets
 
 Secret management best practices are wildly varied, inconsistent, and poorly understood. This set of rules describes a single, self-consistent, narrow approach for agents. 
 

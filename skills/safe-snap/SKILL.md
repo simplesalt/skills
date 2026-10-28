@@ -1,5 +1,5 @@
 ---
-name: faker-anonymizer
+name: safe-snap
 description: Build a script that copies a relational SQL database into a descoped analytics copy with the same schema, replacing PII with Faker values that stay consistent for analytics, without ever reading the data. Use when someone wants an anonymized, masked or fake copy of a PostgreSQL, MySQL or SQLite database for analysts, testing, demos or AI agents.
 license: PolyForm-Noncommercial-1.0.0 (see LICENSE)
 compatibility: Python 3.10+ with Faker, or Node 22.5+ with @faker-js/faker. SQLite works out of the box; PostgreSQL and MySQL need their standard driver.
@@ -9,7 +9,7 @@ metadata:
 
 <!-- agent-prompt -->
 
-# Faker anonymizer
+# Safe snap
 
 You'll help the user produce a script that copies their database into a new one
 with **the same schema**, where:

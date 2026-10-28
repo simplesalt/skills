@@ -10,12 +10,12 @@
     {
       "name": "simplesalt-skills",
       "source": ".",
-      "description": "Agent Skills: faker-anonymizer, clarify, secrets-handling.",
+      "description": "Agent Skills: safe-snap, socratic-sharpen, safe-secrets.",
       "version": "1.0.0"
     },
     {
-      "name": "strip-comments",
-      "source": "./plugins/strip-comments",
+      "name": "spotless-source",
+      "source": "./plugins/spotless-source",
       "description": "Pre-commit hook that strips comments from staged code and keeps untagged markdown out of commits.",
       "version": "1.0.0"
     }

@@ -1,4 +1,4 @@
-# faker-anonymizer
+# safe-snap
 
 An [Agent Skill](https://agentskills.io) that has a coding agent build a script
 to copy a relational SQL database (PostgreSQL, MySQL/MariaDB, SQLite) into an
@@ -69,7 +69,7 @@ expect more than one cleansing pass.
 ## Layout
 
 ```
-faker-anonymizer/
+safe-snap/
   SKILL.md                         the agent's instructions
   LICENSE                          PolyForm Noncommercial 1.0.0
   references/pii-field-names.md    name patterns that suggest PII
@@ -79,7 +79,7 @@ faker-anonymizer/
   tests/                           synthetic fixture and property tests
 ```
 
-Install the `faker-anonymizer/` folder where your agent loads skills (for
+Install the `safe-snap/` folder where your agent loads skills (for
 Claude Code, `.claude/skills/` in the repo or `~/.claude/skills/`). Keep
 `LICENSE` with it.
 
@@ -87,7 +87,7 @@ Claude Code, `.claude/skills/` in the repo or `~/.claude/skills/`). Keep
 
 ```bash
 pip install Faker==40.43.0
-bash skills/faker-anonymizer/tests/run_tests.sh
+bash skills/safe-snap/tests/run_tests.sh
 ```
 
 The JavaScript template is tested too when npm is present. The tests build a 2,000-customer SQLite database and check both templates:

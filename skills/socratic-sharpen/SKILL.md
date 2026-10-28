@@ -1,5 +1,5 @@
 ---
-name: clarify
+name: socratic-sharpen
 description: Use when someone's idea, request or plan is vague, ambiguous or still forming, before any work starts. Runs a Socratic dialogue that surfaces and settles ambiguity through questions rather than answers.
 license: PolyForm-Noncommercial-1.0.0 (see LICENSE)
 ---

@@ -12,7 +12,7 @@ from pygments.util import ClassNotFound
 
 AGENT_PROMPT_TAG = "<!-- agent-prompt -->"
 
-KEEP_DIRECTIVE = "strip-comments:keep"
+KEEP_DIRECTIVES = ("spotless-source:keep", "strip-comments:keep")
 
 YAML_BLOCK_SCALAR_RE = re.compile(
     r'^(?P<indent>[ \t]*)(?:-\s+)?'
@@ -49,7 +49,7 @@ LIST_ITEM_RE = re.compile(r"^[ \t]*-[ \t]")
 
 SHELL_HINT_ALIASES = {"pwsh": "powershell", "cmd": "batch", "sh": "bash"}
 
-USAGE = """usage: strip-comments-precommit.py [--full] [--report]
+USAGE = """usage: spotless-source-precommit.py [--full] [--report]
 
 With no arguments, runs as a PreToolUse hook and reads a hook payload on stdin.
 
@@ -61,7 +61,7 @@ With no arguments, runs as a PreToolUse hook and reads a hook payload on stdin.
 
 
 def log(msg):
-    print(f"strip-comments-precommit: {msg}", file=sys.stderr)
+    print(f"spotless-source-precommit: {msg}", file=sys.stderr)
 
 
 def run(args, cwd, timeout=15):
@@ -624,7 +624,7 @@ def compute_stripped(rel_path, content, added_lines):
         if not (0 < ln <= n):
             continue
         raw = lines_src[ln - 1]
-        if KEEP_DIRECTIVE in raw:
+        if any(d in raw for d in KEEP_DIRECTIVES):
             continue
         if ln == 1 and raw.lstrip().startswith("#!"):
             continue
@@ -635,7 +635,7 @@ def compute_stripped(rel_path, content, added_lines):
         if ln in final_delete or not (0 < ln <= n):
             continue
         raw = lines_src[ln - 1]
-        if KEEP_DIRECTIVE in raw:
+        if any(d in raw for d in KEEP_DIRECTIVES):
             continue
         if ln == 1 and raw.lstrip().startswith("#!"):
             continue

@@ -8,7 +8,7 @@ With Claude Code, add the marketplace and install what you want:
 ```
 /plugin marketplace add simplesalt/skills
 /plugin install simplesalt-skills@simplesalt
-/plugin install strip-comments@simplesalt
+/plugin install spotless-source@simplesalt
 ```
 
 Or copy a folder from `skills/` to wherever your agent loads skills (for Claude
@@ -16,15 +16,15 @@ Code, `.claude/skills/` in a repo or `~/.claude/skills/`), with its `LICENSE`.
 
 | Skill | What it does |
 |---|---|
-| [faker-anonymizer](skills/faker-anonymizer/) | Has the agent build a script that copies a relational SQL database into an anonymized analytics copy with the same schema, replacing PII with Faker values that stay consistent for analysis, without ever reading the data. |
-| [clarify](skills/clarify/) | Turns a vague idea into a clear one through a Socratic dialogue: the agent asks questions, reflects back, and keeps a record of what's settled and what's still open. |
-| [secrets-handling](skills/secrets-handling/) | Rules for where secrets come from, where they may be stored, what a secret holds, and how people fill them without leaving a trace, with a Kubernetes and Flux example. |
+| [safe-snap](skills/safe-snap/) | Has the agent build a script that copies a relational SQL database into an anonymized analytics copy with the same schema, replacing PII with Faker values that stay consistent for analysis, without ever reading the data. |
+| [socratic-sharpen](skills/socratic-sharpen/) | Turns a vague idea into a clear one through a Socratic dialogue: the agent asks questions, reflects back, and keeps a record of what's settled and what's still open. |
+| [safe-secrets](skills/safe-secrets/) | Rules for where secrets come from, where they may be stored, what a secret holds, and how people fill them without leaving a trace, with a Kubernetes and Flux example. |
 
 ## Hooks
 
 | Plugin | What it does |
 |---|---|
-| [strip-comments](plugins/strip-comments/) | Before each `git commit`, strips comments from the staged lines and keeps untagged markdown out of the commit, then tells the agent what it did. |
+| [spotless-source](plugins/spotless-source/) | Before each `git commit`, strips comments from the staged lines and keeps untagged markdown out of the commit, then tells the agent what it did. |
 
 ## License
 
